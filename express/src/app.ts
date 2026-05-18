@@ -10,6 +10,7 @@ import { authRoute } from "./modules/auth/auth.route";
 import { profileRoute } from "./modules/profile/profile.route";
 import { userRoute } from "./modules/user/user.route";
 import globalErrorHandler from "./middleware/globalErrorHandler";
+import fs from "fs";
 const app: Application = express();
 
 app.use(CookieParser());
